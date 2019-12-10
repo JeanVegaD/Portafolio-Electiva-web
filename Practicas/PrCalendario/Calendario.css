@@ -1,0 +1,141 @@
+/*instrucciones generales*/
+* { margin: auto; }
+
+@font-face {
+    font-family: poppins_meddium;
+    src: url(../../otros/fuentes/Poppins-Medium.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: poppins_bold;
+    src: url(../../otros/fuentes/Poppins-Bold.ttf) format("opentype");
+  }
+
+
+  @font-face {
+    font-family: poppins_light;
+    src: url(../../otros/fuentes/Poppins-Light.ttf) format("opentype");
+  }
+
+
+
+/*cabecera de la página*/
+h1 { 
+    text-align: center; 
+    font-family: "poppins_bold";
+    font-size: 30px;
+    padding-top: 50px;
+    color: #424242;
+}
+
+/*div principal del calendario*/
+#calendario { 
+    border: 2px solid #424242 ; 
+    max-width: 500px;    
+    background-color:#fffafa; 
+    text-align: center; }
+
+
+/*tabla del calendario*/
+#diasc{ 
+    border-collapse: separate; 
+    border-spacing: 2px; 
+}
+
+
+#diasc th,#diasc td { 
+    font: normal 14pt poppins_light; 
+    text-align: center;
+    width: 100px; 
+    height: 40px; 
+}
+
+#diasc th { 
+    color: #424242; 
+    background-color: #69f0ae 
+}
+
+
+#diasc td { 
+    color: #492736; 
+    background-color: #9bf5ff 
+}
+
+
+/*línea de la fecha actual*/
+#fechaactual { 
+    font: bold 12pt poppins_light; 
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+
+#fechaactual i { 
+    cursor: pointer ; 
+}
+
+
+#fechaactual i:hover { 
+    color: #69f0ae; 
+}
+
+/*formulario de busqueda de fechas*/
+#buscafecha { 
+    background-color: #424242; 
+    color: #f2f2f2; 
+    padding: 5px 
+}
+
+p{
+    color: #f2f2f2;
+    font: 12pt poppins_light;
+}
+
+
+#buscafecha select, #buscafecha input  { 
+    background-color: #f2f2f2; 
+    color: #424242; 
+    font: 10pt poppins_meddium;  
+}
+
+#buscafecha [type=text]  { 
+    text-align: center; 
+}
+#buscafecha  [type=button] { 
+    cursor: pointer; 
+}
+
+/*cabecera del calendario*/ 
+#anterior { 
+    float: left; 
+    width: 100px; 
+    font: bold 12pt poppins_meddium;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    cursor: pointer;
+    color: #424242;
+    
+}
+
+
+#posterior { 
+    float: right; 
+    width: 100px; 
+    font: bold 12pt poppins_meddium;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    cursor: pointer;
+    color: #424242; 
+}
+
+#anterior:hover,#posterior:hover {
+    color: #69f0ae;
+    text-decoration: none;
+}
+
+
+#titulos { 
+    font: normal 15pt "poppins_bold";
+    padding-top: 11px;
+    padding-bottom: 11px;
+    color: #424242;  
+}
