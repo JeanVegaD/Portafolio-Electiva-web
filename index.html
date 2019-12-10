@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="logica.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio web</title>
+</head>
+<body>
+    <div class="Header">
+        <div class= "contenedor">
+            <img src="otros/img/foto_perfil.png" class="img_usericon" /> 
+            <h1 class="tituloPrincipal">Jean Vega Díaz</h1>
+            <h1 class="subtitulo">Introducción al desarrollo de páginas web</h1>
+            <a href="https://www.instagram.com/jeanvegad" target="_blank"><h1 class="subtitulo">@JeanVegaD</h1></a>
+            <div class= columnas>
+                    <h1 class="elemento_columnas"><a href="#">Asignaciones</a></h1>
+                    <h1 class="elemento_columnas"><a id="btn_curso" onclick="abrirModal_curso()">Sobre el curso</a></h1>
+                    <h1 class="elemento_columnas"><a id="btn_sobremi" onclick="abrirModal_sobremi()">Acerca de Mí</a></h1>
+            </div>
+        </div> 
+    </div>
+
+    <div id="modal_curso" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal_curso()">&times;</span>
+            <img src="otros/img/logo_tec.png" class="img_modal" /> 
+            <h1 class="tituloPrincipal_modal">Introducción al desarrollo de páginas web</h1>
+            <h2 class="subtitulo_modal"><b>Código:</b> IC8057</h2>
+            <h2 class="subtitulo_modal"><b>Período:</b> Verano 2019</h2>
+            <h2 class="subtitulo_modal"><b>Profesora:</b> Ericka Solano Fernandez </h2>
+            <img src="otros/img/imagen_curso.jpg" class="img_modal" /> 
+        </div>  
+    </div>
+
+    <div id="modal_sobremi" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal_sobremi()">&times;</span>
+            <img src="otros/img/foto_perfil2.png" class="img_perfil_modal" /> 
+            <h1 class="tituloPrincipal_modal">Jean Anthony Vega Díaz</h1>
+            <h2 class="subtitulo_modal"><b>Carné:</b> 2016009280</h2>
+            <h2 class="subtitulo_modal"><b>Sede:</b> Centro Académico de Limón</h2>
+            <h2 class="subtitulo_modal"><b>Gustos de la carrera:</b> Poder interactuar de manera interdisciplinaria con cualquier profesion</h2>
+            <h2 class="subtitulo_modal"><b>Áreas de interés:</b> Front end, auditoría, desarrollo web</h2>
+            <h2 class="subtitulo_modal"><b>Hobbies:</b> Jugar videojuegos, escuchar música, ver series</h2>
+        </div> 
+    </div>
+
+
+    <div id="modal_sobremi" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal_sobremi()">&times;</span>
+            <img src="otros/img/foto_perfil2.png" class="img_perfil_modal" /> 
+            <h1 class="tituloPrincipal_modal">Jean Anthony Vega Díaz</h1>
+            <h2 class="subtitulo_modal"><b>Carné:</b> 2016009280</h2>
+            <h2 class="subtitulo_modal"><b>Sede:</b> Centro Académico de Limón</h2>
+            <h2 class="subtitulo_modal"><b>Gustos de la carrera:</b> Poder interactuar de manera interdisciplinaria con cualquier profesion</h2>
+            <h2 class="subtitulo_modal"><b>Áreas de interés:</b> Front end, auditoría, desarrollo web</h2>
+            <h2 class="subtitulo_modal"><b>Hobbies:</b> Jugar videojuegos, escuchar música, ver series</h2>
+        </div> 
+    </div>
+    
+</body>
+</html>
