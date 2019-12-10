@@ -27,7 +27,7 @@
     background: url(otros/img/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: teal;
+    background-color: white;
     height: 100vh;
 }
 
@@ -64,7 +64,7 @@
     
 }
 
-a{
+#a_principal{
     text-decoration: none;
     color:white;
 }
@@ -110,8 +110,9 @@ a{
     height: 100%; 
     overflow: auto;
     background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.8); 
   }
+
   
 
 .modal-content {
@@ -121,6 +122,15 @@ a{
     padding: 20px;
     border: 1px solid #888;
     width: 50%;
+  }
+
+  .modal-content2 {
+    background-color: #fefefe;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
   }
 
 .tituloPrincipal_modal{
@@ -160,7 +170,60 @@ b{
     display:block;
     margin:auto;
 }
-  
+
+
+.columna_asignacion{
+    float: left;
+    width: 24%;
+}
+
+.borde_izq{
+    border-left: solid;
+    border-color: #646464
+}
+
+.borde_der{
+    border-right: solid;
+    border-color: #646464
+}
+
+.row_asignacion:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tituloAsignaciones{
+    color:#646464;
+    font-family: 'poppins_bold';
+    font-size: 20px;
+    text-align:center;
+    padding-bottom: 30px;
+}
+
+#a_asignaciones{
+    text-decoration: none;
+}
+
+
+.contenidoAsignaciones{
+    color: #646464;
+    font-family: 'poppins_light';
+    font-size: 15px;
+    text-align:left;
+    padding-top: 5px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contenidoAsignaciones:hover{
+    color: darkblue;
+}
+
+
 
 .close {
     color: #aaaaaa;

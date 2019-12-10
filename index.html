@@ -12,9 +12,9 @@
             <img src="otros/img/foto_perfil.png" class="img_usericon" /> 
             <h1 class="tituloPrincipal">Jean Vega Díaz</h1>
             <h1 class="subtitulo">Introducción al desarrollo de páginas web</h1>
-            <a href="https://www.instagram.com/jeanvegad" target="_blank"><h1 class="subtitulo">@JeanVegaD</h1></a>
+            <a id="a_principal" href="https://www.instagram.com/jeanvegad" target="_blank"><h1 class="subtitulo">@JeanVegaD</h1></a>
             <div class= columnas>
-                    <h1 class="elemento_columnas"><a href="#">Asignaciones</a></h1>
+                    <h1 class="elemento_columnas"><a id="btn_asignaciones" onclick="abrirModal_asignaciones()" >Asignaciones</a></h1>
                     <h1 class="elemento_columnas"><a id="btn_curso" onclick="abrirModal_curso()">Sobre el curso</a></h1>
                     <h1 class="elemento_columnas"><a id="btn_sobremi" onclick="abrirModal_sobremi()">Acerca de Mí</a></h1>
             </div>
@@ -47,18 +47,46 @@
     </div>
 
 
-    <div id="modal_sobremi" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="cerrarModal_sobremi()">&times;</span>
-            <img src="otros/img/foto_perfil2.png" class="img_perfil_modal" /> 
-            <h1 class="tituloPrincipal_modal">Jean Anthony Vega Díaz</h1>
-            <h2 class="subtitulo_modal"><b>Carné:</b> 2016009280</h2>
-            <h2 class="subtitulo_modal"><b>Sede:</b> Centro Académico de Limón</h2>
-            <h2 class="subtitulo_modal"><b>Gustos de la carrera:</b> Poder interactuar de manera interdisciplinaria con cualquier profesion</h2>
-            <h2 class="subtitulo_modal"><b>Áreas de interés:</b> Front end, auditoría, desarrollo web</h2>
-            <h2 class="subtitulo_modal"><b>Hobbies:</b> Jugar videojuegos, escuchar música, ver series</h2>
+    <div id="modal_asignaciones" class="modal">
+        <div class="modal-content2">
+            <span class="close" onclick="cerrarModal_asignaciones()">&times;</span>
+            <h1 class="tituloPrincipal_modal">Asignaciones</h1>
+            <div class="row_asignacion">
+                <div class="columna_asignacion borde_der">
+                    <h1 class="tituloAsignaciones">Tareas y TC</h1>
+                    <a id="a_asignaciones" href="otros/Files/Tareas/Internet Evolution TimeLine.png" target="_blank">
+                        <h2 class="contenidoAsignaciones">• Internet Evolution TimeLine</h2>
+                    </a>
+
+                    <a id="a_asignaciones" href="otros/Files/Tareas/Becoming_a_Full_Stack_Web_Dev.pdf" target="_blank">
+                        <h2 class="contenidoAsignaciones">• Becoming a Full WEB Stack Dev</h2>
+                    </a>
+                        
+                </div>
+                <div class="columna_asignacion borde_der">
+                    <h1 class="tituloAsignaciones">Laboratorios</h1>
+                        <h2 class="contenidoAsignaciones">
+                            <a2>No hay asignacion para mostrar</a2>
+                        </h2>
+                </div>
+                <div class="columna_asignacion borde_der">
+                    <h1 class="tituloAsignaciones">Proyectos</h1>
+                        <h2 class="contenidoAsignaciones">
+                            <a2>No hay asignacion para mostrar</a2>
+                        </h2>
+                </div>
+                <div class="columna_asignacion ">
+                    <h1 class="tituloAsignaciones">Investigaciones</h1>
+                        <h2 class="contenidoAsignaciones">
+                            <a2>No hay asignaciones para mostrar</a2>
+                        </h2>
+                </div>
+            </div>
+            
+
+
         </div> 
     </div>
-    
+
 </body>
 </html>
