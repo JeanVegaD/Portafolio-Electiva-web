@@ -22,13 +22,19 @@
 
 
 
-.Header{
-
+body{
     background: url(otros/img/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     height: 100vh;
+
+    height: 100vh;
+    background-image: url(otros/img/fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F4F3EF;
 }
 
 .contenedor{
@@ -136,10 +142,8 @@
 .tituloPrincipal_modal{
     color:#646464;
     font-family: 'poppins_bold', 'arial', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-align:center;
-    padding-top: 30px;
-    padding-bottom: 20px;
 }
 
 b{
@@ -159,9 +163,11 @@ b{
 
 .img_modal{
     padding-top: 25px;
-    width: 25%;
+    padding-bottom: 10px;
+    width: 50%;
     display:block;
     margin:auto;
+    margin-bottom: auto;
 }
 
 .img_perfil_modal{
@@ -197,8 +203,9 @@ b{
     color:#646464;
     font-family: 'poppins_bold';
     font-size: 20px;
-    text-align:center;
-    padding-bottom: 30px;
+    text-align:left;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 #a_asignaciones{
@@ -212,9 +219,6 @@ b{
     font-size: 15px;
     text-align:left;
     padding-top: 5px;
-    padding-top: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
     cursor: pointer;
     text-decoration: none;
 }
