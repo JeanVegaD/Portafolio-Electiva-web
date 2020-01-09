@@ -1,0 +1,88 @@
+{
+    "Titulo":"Carrara y caminata",
+    "Organiza": "TEC, Centro Academico de Limon",
+    "RutaCarrea":
+    [
+        {
+            "Latitud":"9.99883",
+            "Longitud":"-83.03291",
+            "Referencia":"Salida/Meta TEC Centro Academico de Limon",
+            "Tipo":"meta"
+        },
+        {
+            "Latitud":"9.99917",
+            "Longitud":"-83.03299",
+            "Referencia":"Colegio de Limón Diurno",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00195",
+            "Longitud":"-83.03179",
+            "Referencia":"Parque Asís Esna",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00512",
+            "Longitud":"-83.03566",
+            "Referencia":"Playa Piuta",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00900",
+            "Longitud":"-83.04877",
+            "Referencia":"Hotel Oasis del Caribe",
+            "Tipo":"punto"
+        },{
+            "Latitud":"10.00923",
+            "Longitud":"-83.06430",
+            "Referencia":"Playa Bonita",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00976",
+            "Longitud":"-83.06714",
+            "Referencia":"Playa Portete",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00687",
+            "Longitud":"-83.06799",
+            "Referencia":"Villas Cacao",
+            "Tipo":"retorno"
+        }
+    ],
+    "RutaCaminata":
+    [
+        {
+            "Latitud":"9.99883",
+            "Longitud":"-83.03291",
+            "Referencia":"Salida/Meta TEC Centro Academico de Limon",
+            "Tipo":"meta"
+        },
+        {
+            "Latitud":"9.99917",
+            "Longitud":"-83.03299",
+            "Referencia":"Colegio de Limón Diurno",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00195",
+            "Longitud":"-83.03179",
+            "Referencia":"Parque Asís Esna",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00512",
+            "Longitud":"-83.03566",
+            "Referencia":"Playa Piuta",
+            "Tipo":"punto"
+        },
+        {
+            "Latitud":"10.00900",
+            "Longitud":"-83.04877",
+            "Referencia":"Hotel Oasis del Caribe",
+            "Tipo":"retorno"
+        }
+    ]
+
+}
