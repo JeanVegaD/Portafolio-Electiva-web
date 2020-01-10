@@ -65,15 +65,25 @@ var datos={
 
 //crea el mapa de la carrera 
 function cargarMapaCarrera(){
-    var mymap = L.map('map_carrera').setView([9.9988, -83.03295], 17);
 
-    var layer =L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+
+    var mymap = L.map('map_carrera').setView([9.9988, -83.03295], 17);
+    
+    /*var layer =L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+*/
+    
+    var CartoDB_VoyagerLabelsUnder = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
     }).addTo(mymap);
     
 
     MarkersName=getMarkersNameCarrera();
 
+    
     L.Routing.control({
         waypoints: getWaypointsCarrera(),
         routeWhileDragging:false,
@@ -82,6 +92,7 @@ function cargarMapaCarrera(){
             return L.marker(waypoint.latLng).bindPopup(MarkersName[waypointIndex]);
         }
       }).addTo(mymap);
+
 } 
 
 //obtiene los marcadores del json 
@@ -110,8 +121,14 @@ function getMarkersNameCarrera(){
 function cargarMapaCaminata(){
     var mymap2 = L.map('map_caminata').setView([9.9988, -83.03295], 17);
 
-    var layer =L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    /*var layer =L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap2);*/
+
+    var CartoDB_VoyagerLabelsUnder = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
     }).addTo(mymap2);
 
     var todosLosPuntos= L.markerClusterGroup();
